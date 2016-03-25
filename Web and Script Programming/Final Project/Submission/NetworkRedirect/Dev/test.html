@@ -1,0 +1,156 @@
+
+<html>
+<head>
+<title>Untitled Document</title>
+</head>
+
+
+<script>
+var cache = new Array();
+var ID = "host";
+var username ="cisco"
+var login = false;
+var numComp	= 1 ;
+var command = new Array (new Array, new Array);
+var xmlhttp;
+
+function request(cmd, id) {
+	if (cache[cmd] != null) {
+		document.getElementById(id).innerHTML=cache[cmd];
+		//alert ("USED CACHE " + cache[command]);
+		return;
+	} else {
+		command[0].push(cmd);
+		command[1].push("ID:"+id);
+		//Queue Commands
+		return;
+	}
+}
+function requestSp(cmd, fct) {
+	var nonCached = new Array();
+
+	for (i = 0; i < cmd.length; i++) {
+		if (cache[cmd[i]] != null) {
+			var fn = window[fct];
+			if (typeof fn === 'function') {
+				fn(cache[cmd[0]]);
+			} else {
+				console.log("requestFct(",cmd[0],",",fct," - Undefined Function")	
+			}			
+		} else {
+			nonCached.push(cmd[i]);	
+		}		
+	}
+		if (nonCached.length > 1) {
+			command[0].push(nonCached[0]);
+			command[1].push("[FUNCTION:"+fct);			
+			
+			for (i = 1; i < nonCached.length-1; i++) {		
+				command[0].push(nonCached[i]);
+				command[1].push("FUNCTION:"+fct);
+			}
+			
+			command[0].push(nonCached[nonCached.length-1]);
+			command[1].push("FUNCTION]:"+fct);			
+		} else if (nonCached.length = 1) {
+				command[0].push(nonCached[0]);
+				command[1].push("FUNCTION:"+fct);				
+		} else {
+			console.log("requestSp all commands were in cache");
+		}		
+}
+function publish(responseText) {
+	console.log("PUBLISHING: "+ responseText);
+	responseText = responseText.split(";");
+	var multiReturn = false;
+	var multiReturnData = new Array ();
+	
+		for (i = 0; i < responseText.length-1; i++) {
+			temp = command[1][0].split(":");
+			
+			cache[command[0][0]] = responseText[i];
+			if (temp[0] == "ID") {		
+				console.log(command[0][0], " = " , cache[command[0][0]] , " GOING TO ", command[1][0]);
+				document.getElementById(temp[1]).innerHTML=cache[command[0][0]];
+				
+			}  else if (temp[0] == "[FUNCTION") {
+				multiReturn = true;
+				multiReturnData.push(cache[command[0][0]]);	
+							
+			} else if (temp[0] == "FUNCTION") {
+				if (!multiReturn) {
+					var fn = window[temp[1]];
+					if (typeof fn === 'function') {
+						fn(new Array (cache[command[0][0]]));	
+					} else {
+						console.log("publish - Undefined Function")		
+					}
+				} else {
+					multiReturnData.push(cache[command[0][0]]);					
+				}
+			} else if (temp[0] == "FUNCTION]") {
+				multiReturn = false;
+				multiReturnData.push(cache[command[0][0]]);	
+				var fn = window[temp[1]];
+				
+				if (typeof fn === 'function') {
+					fn(multiReturnData);	
+				} else {
+					console.log("publish - Undefined Function")		
+				}
+				multiReturnData = new Array ();	
+				
+			} else {
+				console.log("Unknown Publish Type");	
+			}
+			command[0].splice(0,1);
+			command[1].splice(0,1);
+		}
+			//alert ("REQUESTED " + cache[command]);
+			return;
+}
+
+setInterval( function sendRequest() {
+	if (command[0].toString() != "") {
+		console.log("COMMAND ARRAY: " , command[0].toString());
+		cmd = "";
+		for (i = 0; i < command[0].length; i++) {
+			cmd += command[0][i] + ";"	
+		}
+		console.log("SENDING: " + cmd);
+		if (window.XMLHttpRequest) {
+    	// code for IE7+, Firefox, Chrome, Opera, Safari
+    		xmlhttp=new XMLHttpRequest();
+	  	} else { // code for IE6, IE5
+    		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  	}	
+  		xmlhttp.onreadystatechange=function() {
+    		if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+				console.log("XMLRESPONSE: ",xmlhttp.responseText);
+	     		publish(xmlhttp.responseText);
+				return true;			
+			}	
+    	}
+  		xmlhttp.open("GET","interface.php?q="+cmd,true);
+  		xmlhttp.send();
+	}
+}, 500);
+
+function test (array) {
+	console.log(array);
+	alert(array);
+}
+function btnClick() {
+	requestSp(new Array("host.PC.0.ip"),"test");
+}
+</script>
+
+
+
+
+<body>
+
+<button onclick="btnClick()">Click Me to TEST stuff</button>
+<div id="test"></div>
+</body>
+</html>

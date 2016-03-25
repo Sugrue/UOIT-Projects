@@ -1,0 +1,91 @@
+﻿Build started 10/04/2013 12:03:00 AM.
+     1>Project "c:\Users\100483306\Google Drive\UOIT\Object-Oriented Programming INFR2140\Visual Studio\Final_IT_Project\Final_IT_Project\Final_IT_Project.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\Final_IT_Project.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Grid.cpp Main.cpp
+         Main.cpp
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\final_it_project\final_it_project\main.cpp(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xmemory(138): error C2265: 'std::allocator<_Ty>::value_type' : reference to a zero-sized array is illegal
+                 with
+                 [
+                     _Ty=char []
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(421) : see reference to class template instantiation 'std::allocator<_Ty>' being compiled
+                 with
+                 [
+                     _Ty=char []
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(481) : see reference to class template instantiation 'std::_Vector_val<_Ty,_Alloc>' being compiled
+                 with
+                 [
+                     _Ty=char [],
+                     _Alloc=std::allocator<char []>
+                 ]
+                 c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\final_it_project\final_it_project\grid.h(22) : see reference to class template instantiation 'std::vector<_Ty>' being compiled
+                 with
+                 [
+                     _Ty=char []
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xmemory(140): error C2265: 'std::allocator<_Ty>::value_type' : reference to a zero-sized array is illegal
+                 with
+                 [
+                     _Ty=char []
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xmemory(195): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xmemory(200): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(521): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(527): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(630): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(655): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(975): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(1045): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(1050): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(1057): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(1242): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(1329): error C2265: '_Ty' : reference to a zero-sized array is illegal
+         Grid.cpp
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xmemory(138): error C2265: 'std::allocator<_Ty>::value_type' : reference to a zero-sized array is illegal
+                 with
+                 [
+                     _Ty=char []
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(421) : see reference to class template instantiation 'std::allocator<_Ty>' being compiled
+                 with
+                 [
+                     _Ty=char []
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(481) : see reference to class template instantiation 'std::_Vector_val<_Ty,_Alloc>' being compiled
+                 with
+                 [
+                     _Ty=char [],
+                     _Alloc=std::allocator<char []>
+                 ]
+                 c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\final_it_project\final_it_project\grid.h(22) : see reference to class template instantiation 'std::vector<_Ty>' being compiled
+                 with
+                 [
+                     _Ty=char []
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xmemory(140): error C2265: 'std::allocator<_Ty>::value_type' : reference to a zero-sized array is illegal
+                 with
+                 [
+                     _Ty=char []
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xmemory(195): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\xmemory(200): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(521): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(527): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(630): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(655): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(975): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(1045): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(1050): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(1057): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(1242): error C2265: '_Ty' : reference to a zero-sized array is illegal
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\vector(1329): error C2265: '_Ty' : reference to a zero-sized array is illegal
+         Generating Code...
+     1>Done Building Project "c:\Users\100483306\Google Drive\UOIT\Object-Oriented Programming INFR2140\Visual Studio\Final_IT_Project\Final_IT_Project\Final_IT_Project.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.27

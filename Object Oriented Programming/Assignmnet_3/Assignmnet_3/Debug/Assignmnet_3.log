@@ -1,0 +1,43 @@
+﻿Build started 17/03/2013 10:45:52 PM.
+     1>Project "C:\Users\100483306\Google Drive\UOIT\Object-Oriented Programming INFR2140\Visual Studio\Assignmnet_3\Assignmnet_3\Assignmnet_3.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Assignmnet_3.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\assignmnet_3\assignmnet_3\main.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\assignmnet_3\assignmnet_3\main.cpp(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\assignmnet_3\assignmnet_3\main.cpp(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\assignmnet_3\assignmnet_3\main.cpp(7): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\assignmnet_3\assignmnet_3\main.cpp(8): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\assignmnet_3\assignmnet_3\main.cpp(9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\assignmnet_3\assignmnet_3\main.cpp(10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\assignmnet_3\assignmnet_3\main.cpp(11): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\assignmnet_3\assignmnet_3\main.cpp(111): warning C4018: '<' : signed/unsigned mismatch
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\100483306\Google Drive\UOIT\Object-Oriented Programming INFR2140\Visual Studio\Assignmnet_3\Debug\Assignmnet_3.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Assignmnet_3.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\100483306\Google Drive\UOIT\Object-Oriented Programming INFR2140\Visual Studio\Assignmnet_3\Debug\Assignmnet_3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\100483306\Google Drive\UOIT\Object-Oriented Programming INFR2140\Visual Studio\Assignmnet_3\Debug\Assignmnet_3.lib" /MACHINE:X86 Debug\Assignmnet_3.exe.embed.manifest.res
+         Debug\Circle.obj
+         Debug\Cylinder.obj
+         Debug\main.obj
+         Debug\Shape.obj
+         Debug\Sphere.obj
+         Debug\Square.obj
+         Debug\ThreeDShape.obj
+         Debug\Triangle.obj
+         Debug\TwoDShape.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Assignmnet_3.exe.embed.manifest" /manifest Debug\Assignmnet_3.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         Assignmnet_3.vcxproj -> C:\Users\100483306\Google Drive\UOIT\Object-Oriented Programming INFR2140\Visual Studio\Assignmnet_3\Debug\Assignmnet_3.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\Assignmnet_3.unsuccessfulbuild".
+         Touching "Debug\Assignmnet_3.lastbuildstate".
+     1>Done Building Project "C:\Users\100483306\Google Drive\UOIT\Object-Oriented Programming INFR2140\Visual Studio\Assignmnet_3\Assignmnet_3\Assignmnet_3.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.91

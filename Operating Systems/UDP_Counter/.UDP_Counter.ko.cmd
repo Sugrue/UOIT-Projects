@@ -1,0 +1,1 @@
+cmd_/OS_Final_Project/UDP_Counter/UDP_Counter.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.11.0-18-generic/scripts/module-common.lds --build-id  -o /OS_Final_Project/UDP_Counter/UDP_Counter.ko /OS_Final_Project/UDP_Counter/UDP_Counter.o /OS_Final_Project/UDP_Counter/UDP_Counter.mod.o

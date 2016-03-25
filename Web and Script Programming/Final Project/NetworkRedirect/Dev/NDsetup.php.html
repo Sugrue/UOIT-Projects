@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<?php
+	require_once "../Libary/IOS_device.php";
+	require_once "../Libary/database.php";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+			$db = new database("web","webtest","localhost","network");
+			$device = new IOS_device(post("RID"), post("username"), post("password"), post("type") , post("DHCP"));
+			
+			$device->getInterface();
+			$db->addNetworkDevice($device);
+}
+function post($fctName) {
+	return $_POST[$fctName];	
+	
+}
+?>
+
+<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" >
+            <div><label>Name: </label><input type="text" name="name"/></div><br>
+            <div><label>RID:</label><input type="text" name="RID"/></div><br>
+            <div><label>Username:</label><input type="text" name="username"/></div><br>
+            <div><label>Password:</label><input type="text" name="password"/></div><br>
+           	<div><label>Port:</label><input type="text" name="port"/></div><br>
+            <div><label>DHCP  (1 or 0):</label><input type="text" name="DHCP"/></div><br>
+            <div><label>Type:</label><input type="text" name="type"/></div><br>
+            
+            
+            
+        <input type="submit" value="Submit">
+</form>
+</body>
+</html>

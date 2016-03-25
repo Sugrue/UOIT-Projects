@@ -1,0 +1,19 @@
+1)
+Select buyer, product
+FROM purchased
+WHERE product = "telephony"
+
+2)
+
+
+3)
+
+4)
+select buyer, seller
+from purchase
+where buyer = seller
+
+5) 
+select buyer
+from purchase, product, company
+where product = pname and manufactuer = cname and (seller = 'joe' or stockprice > 50)

@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+	<head>
+		<script>
+			function clickCounter() {
+ 			if(typeof(Storage) !== "undefined") {
+ 				if (localStorage.clickcount) {
+ 					localStorage.clickcount = Number(localStorage.clickcount)+1;
+ 				} else {
+ 					localStorage.clickcount = 1;
+ 				}
+ 				document.getElementById("result").innerHTML="You have clicked the button "+ localStorage.clickcount;
+ 				} else {
+ 				document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+ 				}	
+			} 
+			function PrintCount() {
+				if (localStorage.clickcount) {
+					document.getElementById("result").innerHTML="You have clicked the button "+ localStorage.clickcount;
+				} else {
+					document.getElementById("result").innerHTML="Click the button to see the counter increase."
+				}
+			}
+		</script>
+
+	</head>
+	<body onLoad="PrintCount()">
+		<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+		<div id="result"></div>
+	</body>
+
+</html>
+
+
+

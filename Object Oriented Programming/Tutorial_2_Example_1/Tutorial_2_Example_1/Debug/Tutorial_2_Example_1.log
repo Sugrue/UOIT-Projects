@@ -1,0 +1,24 @@
+﻿Build started 24/01/2013 2:54:50 PM.
+     1>Project "C:\Users\100483306\Google Drive\UOIT\Object-Oriented Programming INFR2140\Visual Studio\Tutorial_2_Example_1\Tutorial_2_Example_1\Tutorial_2_Example_1.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\Tutorial_2_Example_1.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Car.cpp Tutorial_2_Example_1.cpp
+         Tutorial_2_Example_1.cpp
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\tutorial_2_example_1\tutorial_2_example_1\tutorial_2_example_1.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\tutorial_2_example_1\tutorial_2_example_1\tutorial_2_example_1.cpp(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\tutorial_2_example_1\tutorial_2_example_1\tutorial_2_example_1.cpp(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\tutorial_2_example_1\tutorial_2_example_1\tutorial_2_example_1.cpp(5): error C2143: syntax error : missing ';' before 'using'
+         Car.cpp
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\tutorial_2_example_1\tutorial_2_example_1\car.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\tutorial_2_example_1\tutorial_2_example_1\car.cpp(3): error C2628: 'Car' followed by 'void' is illegal (did you forget a ';'?)
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\tutorial_2_example_1\tutorial_2_example_1\car.cpp(3): error C2556: 'Car Car::initCar(std::string,std::string)' : overloaded function differs only by return type from 'void Car::initCar(std::string,std::string)'
+                 c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\tutorial_2_example_1\tutorial_2_example_1\car.h(14) : see declaration of 'Car::initCar'
+     1>c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\tutorial_2_example_1\tutorial_2_example_1\car.cpp(3): error C2371: 'Car::initCar' : redefinition; different basic types
+                 c:\users\100483306\google drive\uoit\object-oriented programming infr2140\visual studio\tutorial_2_example_1\tutorial_2_example_1\car.h(14) : see declaration of 'Car::initCar'
+         Generating Code...
+     1>Done Building Project "C:\Users\100483306\Google Drive\UOIT\Object-Oriented Programming INFR2140\Visual Studio\Tutorial_2_Example_1\Tutorial_2_Example_1\Tutorial_2_Example_1.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.59

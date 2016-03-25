@@ -1,0 +1,25 @@
+body {
+	background-color: blue;
+}
+h1 {
+	color: white;
+	margin-left: 20px;
+	text-align:center;
+}
+.menu {
+	background-color:black;
+	color:white;
+	height: 1000px;
+	width:100px;
+	float:left;
+	text-align:center;
+}
+.article {
+	background-color: white;
+	color: black;
+	text-align:left;
+}
+.footer {
+	text-align:center;
+	color:white
+}

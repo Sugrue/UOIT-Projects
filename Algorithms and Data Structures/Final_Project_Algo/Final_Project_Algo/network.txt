@@ -1,0 +1,7 @@
+Ottawa Gatineau 1
+Ottawa Cornwall 10
+Cornwall Gatineau 10
+Cornwall Montreal 3
+Gatineau Montreal 2
+Toronto Cornwall 4
+Toronto Montreal 10

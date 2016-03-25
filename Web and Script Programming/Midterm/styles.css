@@ -1,0 +1,37 @@
+
+#loginPortal {
+    width: 250px;
+    height: 250px;
+	border: 3px solid #ADADAD;
+	border-radius: 10px;
+}
+.loginTextEmpty {
+	color: #ADADAD;	
+}
+.loginTextData {
+	color: black;
+}
+.error *{
+	color: red;
+}
+.status * {
+	color: black;	
+}
+.loginButton {
+	width: 85px;	
+}
+
+#webPageCreator{
+	border: 3px solid #ADADAD;
+	border-radius: 10px;
+	width: 500px;
+}
+#webPageCfg {
+	display:inline;	
+}
+.webPageBlock{
+	display:inline-block;
+}
+#jsError {
+	display:none;
+}

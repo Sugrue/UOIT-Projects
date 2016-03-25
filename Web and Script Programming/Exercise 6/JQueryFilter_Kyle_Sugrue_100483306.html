@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#btn1").click(function(){	
+				$("p.intro").first().css({"background-color":"yellow"});
+				$("p.intro").eq(1).remove();
+			});
+		});
+	</script> 
+</head>
+<body>
+	<h1>Welcome to My Homepage</h1>
+	<p>My name is John.</p>
+	<p class="intro">I live in Oshawa.</p>
+	<p class="intro">I live in Oshawa.</p>
+	<p>I work at UOIT.</p>
+    <button id="btn1">JQuery</button>
+</body>
+</html>
